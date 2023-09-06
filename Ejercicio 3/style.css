@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    background-color: purple;
+    padding: 1rem;
+
+}
+
+section {
+    display: grid;
+    width: 100%;
+    height: 300px;
+    gap: 1rem;
+    grid-template-areas:
+        "a a c c c"
+        "a a d d e"
+        "b b d d f";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+div {
+    background-color: aqua;
+}
+
+
+.a {
+    grid-area: a;
+}
+.b {
+    grid-area: b;
+}
+.c {
+    grid-area: c;
+}
+.d {
+    grid-area: d;
+}
+.e {
+    grid-area: e;
+}
+.f {
+    grid-area: f;
+}

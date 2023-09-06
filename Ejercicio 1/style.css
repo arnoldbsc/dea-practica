@@ -1,0 +1,58 @@
+body  {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    gap: 1rem;
+}
+
+p, h1, button {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+button {
+    width: 15rem;
+    height: 3rem;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+    height: 100%;
+}
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 900px) {
+    section {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+  
